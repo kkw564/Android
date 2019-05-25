@@ -12,18 +12,20 @@
         android:orientation="vertical"
         >
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/num1_value"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textSize="20px"
             android:textColor="#AF2020"
-            android:text="첫 번째 숫자"/>
+            android:hint="첫 번째 숫자"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/num2_value"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textSize="20px"
             android:textColor="#1D0EB1"
-            android:text="두 번째 숫자"/>
+            android:hint="두 번째 숫자"/>
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -33,27 +35,53 @@
                 android:id="@+id/add_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:text="ADD" />
+                android:text="ADD"
+                android:onClick="addClick"
+                />
 
             <Button
                 android:id="@+id/sub_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SUB" />
+                android:text="SUB"
+                android:onClick="subClick"
+                />
+
 
             <Button
                 android:id="@+id/mul_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MUL" />
+                android:text="MUL"
+                android:onClick="mulClick"
+                />
 
             <Button
                 android:id="@+id/div_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DIV"/>
+                android:text="DIV"
+                android:onClick="divClick"
+                />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:text="결과 :: "
+                />
+            <TextView
+                android:id="@+id/resultView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                />
+        </LinearLayout>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
