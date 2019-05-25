@@ -20,4 +20,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, CalcActivity.class));
     }
 
+    public void goAlertActivity(View v){
+        startActivity(new Intent(MainActivity.this, AlertActivity.class));
+    }
+
 }

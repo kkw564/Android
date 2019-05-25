@@ -24,8 +24,9 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="계산기"
-                android:textSize="50px"/>
+                android:text="Alert"
+                android:textSize="50px"
+                android:onClick="goAlertActivity"/>
         </LinearLayout>
     </LinearLayout>
 
