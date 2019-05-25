@@ -20,26 +20,38 @@ public class MainActivity extends AppCompatActivity {
         EditText num2 = (EditText) findViewById(R.id.num2_value);
         TextView result = (TextView) findViewById(R.id.resultView);
 
-        int n1 = Integer.parseInt(num1.getText().toString());
-        int n2 = Integer.parseInt(num2.getText().toString());
-        int ret = n1 + n2;
+        try{
+            int n1 = Integer.parseInt(num1.getText().toString());
+            int n2 = Integer.parseInt(num2.getText().toString());
+            int ret = n1 + n2;
 
-        String str = Integer.toString(ret);
-        result.setText(str);
-        Toast.makeText(MainActivity.this,str, Toast.LENGTH_SHORT).show();
+            String str = Integer.toString(ret);
+            result.setText(str);
+            Toast.makeText(MainActivity.this,str, Toast.LENGTH_SHORT).show();
+        }
+        catch(Exception e){
+            Toast.makeText(MainActivity.this,e.getMessage(), Toast.LENGTH_SHORT).show();
+            return;
+        }
     }
     public void subClick(View v){
         EditText num1 = (EditText) findViewById(R.id.num1_value);
         EditText num2 = (EditText) findViewById(R.id.num2_value);
         TextView result = (TextView) findViewById(R.id.resultView);
 
-        int n1 = Integer.parseInt(num1.getText().toString());
-        int n2 = Integer.parseInt(num2.getText().toString());
-        int ret = n1 - n2;
+        try{
+            int n1 = Integer.parseInt(num1.getText().toString());
+            int n2 = Integer.parseInt(num2.getText().toString());
+            int ret = n1 - n2;
 
-        String str = Integer.toString(ret);
-        result.setText(str);
-        Toast.makeText(MainActivity.this,str, Toast.LENGTH_SHORT).show();
+            String str = Integer.toString(ret);
+            result.setText(str);
+            Toast.makeText(MainActivity.this,str, Toast.LENGTH_SHORT).show();
+        }
+        catch(Exception e){
+            Toast.makeText(MainActivity.this,e.getMessage(), Toast.LENGTH_SHORT).show();
+            return;
+        }
     }
 
     public void mulClick(View v){
@@ -47,13 +59,19 @@ public class MainActivity extends AppCompatActivity {
         EditText num2 = (EditText) findViewById(R.id.num2_value);
         TextView result = (TextView) findViewById(R.id.resultView);
 
-        int n1 = Integer.parseInt(num1.getText().toString());
-        int n2 = Integer.parseInt(num2.getText().toString());
-        int ret = n1 * n2;
+        try{
+            int n1 = Integer.parseInt(num1.getText().toString());
+            int n2 = Integer.parseInt(num2.getText().toString());
+            int ret = n1 * n2;
 
-        String str = Integer.toString(ret);
-        result.setText(str);
-        Toast.makeText(MainActivity.this,str, Toast.LENGTH_SHORT).show();
+            String str = Integer.toString(ret);
+            result.setText(str);
+            Toast.makeText(MainActivity.this,str, Toast.LENGTH_SHORT).show();
+        }
+        catch(Exception e){
+            Toast.makeText(MainActivity.this,e.getMessage(), Toast.LENGTH_SHORT).show();
+            return;
+        }
     }
 
     public void divClick(View v){
@@ -61,11 +79,18 @@ public class MainActivity extends AppCompatActivity {
         EditText num2 = (EditText) findViewById(R.id.num2_value);
         TextView result = (TextView) findViewById(R.id.resultView);
 
-        int n1 = Integer.parseInt(num1.getText().toString());
-        int n2 = Integer.parseInt(num2.getText().toString());
-        int ret = n1 / n2;
-        String str = Integer.toString(ret);
-        result.setText(str);
-        Toast.makeText(MainActivity.this,str, Toast.LENGTH_SHORT).show();
+        try{
+            int n1 = Integer.parseInt(num1.getText().toString());
+            int n2 = Integer.parseInt(num2.getText().toString());
+            int ret = n1 / n2;
+
+            String str = Integer.toString(ret);
+            result.setText(str);
+            Toast.makeText(MainActivity.this,str, Toast.LENGTH_SHORT).show();
+        }
+        catch(Exception e){
+            Toast.makeText(MainActivity.this,e.getMessage(), Toast.LENGTH_SHORT).show();
+            return;
+        }
     }
 }
