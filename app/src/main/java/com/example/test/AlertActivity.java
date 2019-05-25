@@ -34,7 +34,6 @@ public class AlertActivity extends AppCompatActivity {
     }
 
     public void exit(View v){
-        Button exitBtn = (Button) findViewById(R.id.exit_btn);
         AlertDialog.Builder builder = new AlertDialog.Builder(AlertActivity.this);
         builder.setMessage("정말 종료하시겠습니까?");
         builder.setTitle("종료 알림창")
