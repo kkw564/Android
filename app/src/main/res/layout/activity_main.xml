@@ -27,6 +27,12 @@
                 android:text="Alert"
                 android:textSize="50px"
                 android:onClick="goAlertActivity"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Navigation"
+                android:textSize="50px"
+                android:onClick="goNaviActivity"/>
         </LinearLayout>
     </LinearLayout>
 

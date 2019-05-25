@@ -24,4 +24,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, AlertActivity.class));
     }
 
+    public void goNaviActivity(View v){
+        startActivity(new Intent(MainActivity.this, NaviActivity.class));
+    }
+
 }
