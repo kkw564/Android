@@ -1,1 +1,2 @@
+include ':recyclerviewtest'
 include ':app'

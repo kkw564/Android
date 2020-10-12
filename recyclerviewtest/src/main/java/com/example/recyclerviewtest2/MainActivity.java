@@ -1,9 +1,7 @@
-package com.example.test;
+package com.example.recyclerviewtest;
 
-import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,9 +10,4 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-    public void goCalcActivity(View v){
-        startActivity(new Intent(MainActivity.this, CalcActivity.class));
-    }
-
 }
