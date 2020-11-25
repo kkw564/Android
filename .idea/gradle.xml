@@ -11,7 +11,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/mockedstaticunittest" />
+            <option value="$PROJECT_DIR$/mockedstaticunittest/sharedelementstransitionexample" />
             <option value="$PROJECT_DIR$/recyclerviewtest" />
+            <option value="$PROJECT_DIR$/sharedelementstransitionexample" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
